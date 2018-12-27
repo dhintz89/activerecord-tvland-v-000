@@ -8,4 +8,5 @@ class Character < ActiveRecord::Base
   
   def build_show(attributes)
     Show.create(attributes) << self
+  end
 end
