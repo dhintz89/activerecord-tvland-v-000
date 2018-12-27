@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   
   def build_network(:call_letters, :channel)
     Network.create do |n|
-      n.call_letters = a[:call_letters]
+      n.call_letters = :call_letters
     
   end
 end
