@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   
   def build_network(attributes)
     new_network = Network.create(attributes)
-    
-    
+    self.network_id = new_network.id
   end
+  
 end
